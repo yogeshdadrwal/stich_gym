@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Sora:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#00363a","on-primary-fixed-variant":"#822700","surface-container":"#1d2025","on-tertiary-fixed":"#002022","outline-variant":"#5c4037","tertiary-fixed":"#7df4ff","on-tertiary-container":"#002f33","on-primary-fixed":"#390c00","inverse-on-surface":"#2e3036","on-surface":"#e1e2ea","tertiary-container":"#00a0aa","secondary-container":"#c3f400","surface-tint":"#ffb59c","surface-bright":"#36393f","on-tertiary-fixed-variant":"#004f54","on-secondary-fixed-variant":"#3c4d00","on-background":"#e1e2ea","primary-fixed-dim":"#ffb59c","primary-container":"#ff5708","on-secondary-container":"#556d00","inverse-surface":"#e1e2ea","on-primary-container":"#511500","on-secondary":"#283500","surface":"#111319","on-secondary-fixed":"#161e00","surface-container-highest":"#32353b","surface-dim":"#111319","tertiary":"#00dbe9","secondary-fixed":"#c3f400","on-primary":"#5c1900","on-error-container":"#ffdad6","background":"#111319","surface-container-high":"#272a30","primary-fixed":"#ffdbcf","secondary":"#ffffff","secondary-fixed-dim":"#abd600","error":"#ffb4ab","inverse-primary":"#aa3600","surface-variant":"#32353b","on-surface-variant":"#e5beb2","primary":"#ffb59c","outline":"#ac897e","surface-container-low":"#191c21","tertiary-fixed-dim":"#00dbe9","on-error":"#690005","surface-container-lowest":"#0b0e13","error-container":"#93000a"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"2.5rem","space-md":"1rem",margin:"3rem","space-xs":"0.25rem",gutter:"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-mobile":"1rem","gutter-mobile":"0.75rem"},fontFamily:{"body-lg":["Hanken Grotesk"],"metric-display":["Sora"],"headline-xl-mobile":["Sora"],"headline-lg-mobile":["Sora"],"label-md":["Hanken Grotesk"],"headline-sm":["Sora"],"label-sm":["Hanken Grotesk"],"headline-md":["Sora"],"body-md":["Hanken Grotesk"],"headline-xl":["Sora"],"headline-lg":["Sora"],"body-sm":["Hanken Grotesk"]},fontSize:{"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"400"}],"metric-display":["32px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-xl-mobile":["36px",{lineHeight:"42px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-lg-mobile":["28px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.12em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"headline-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-lowest px-margin-mobile md:px-margin py-space-xs"><div class="max-w-[1440px] mx-auto flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase"><div class="flex items-center gap-space-lg"><span class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>FREE TIER LOGISTICS OVER $75 [DOMESTIC]</span><span class="hidden lg:flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>100% INFORMED-CHOICE CERTIFIED BATCHES</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs cursor-pointer hover:text-on-surface transition-colors"><span>REGION // USD ($)</span><span class="material-symbols-outlined text-[14px]">expand_more</span></div><span class="text-surface-container-highest">|</span><a class="hover:text-secondary-container transition-colors" data-path="laboratory-telemetry" href="#">LAB HPLC SPECS</a></div></div></div><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group" data-path="shop-all" href="#"><img alt="VORTEX LABS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBkvDALWz31eb8w46eEGR1fbm8ps8LLwKu2ysVqeHKTFJ8sEa4gStry-otSOLcliPCRsINCi_xKALOQ957XPMpHiYQRZkqSSSAeGKKSOpgHF8nqH1BHnhbLc4hySvKKjA1VnBSn1wQ1dARrkQ6l9GEmhw3k9TJ-V1cwDyDLldiRW-6qc_XDILDbb25wcEiRGbjQqONWp-mRYGPa_d5ZUfUpY1KwwJR3vaUieP6AgW3R"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-secondary group-hover:text-primary transition-colors">VORTEX LABS</span><span class="font-label-sm text-label-sm tracking-widest text-secondary-container">PRECISION BIO-METRICS</span></div></a><nav class="hidden xl:flex items-center gap-space-md font-label-md text-label-md uppercase tracking-wider" data-active-classes="text-on-surface bg-surface-container-high rounded px-space-sm py-space-xs"><a aria-current="page" class="transition-colors text-on-surface bg-surface-container-high rounded px-space-sm py-space-xs" data-path="shop-all" href="#">Shop All</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="proteins" href="#">Proteins</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="pre-workout" href="#">Pre-Workout</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="creatine-and-recovery" href="#">Creatine &amp; Recovery</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="bundles" href="#">Bundles</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="laboratory-telemetry" href="#">The Science / Lab Reports</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low px-space-md py-space-xs rounded gap-space-sm w-64 lg:w-72"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent text-on-surface placeholder:text-outline focus:outline-none font-body-sm text-body-sm w-full" placeholder="Query bio-actives, formulas..." type="text"/><kbd class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-space-xs py-0.5 rounded shadow-[0_1px_8px_rgba(0,0,0,0.04)]">⌘K</kbd></div><div class="flex items-center gap-space-sm"><a class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded transition-colors relative flex items-center justify-center" data-path="shop-all" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span></a><button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded transition-colors relative flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[9px] flex items-center justify-center font-bold">3</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVQup5mdL_760lWMHbQyDgxsb9B2KYl-PaIoUvJ4f_VdvM_LilRQYyZK7tETCQievle1BQ16qRS1kSARWGb_OBT95a9UvFU8PaOP3rvtE_BiMM3GpQ_mpcu0GBXNbfQK0AUQrwBNyZbk6X1cVpOSwd7FT23F5MhF65139s2eULmHjqqXoFgB6yRsEjyUDKe8jOCyqPDs_gp7dwDpHy9F_bZR9pLOqUhKFMTyz7wbE"/></div></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin min-h-[calc(100vh-5rem)]"><div class="flex flex-col w-full text-on-surface">
+<!-- TOP HERO STRIP & ACTIVE CATEGORIES -->
+<section class="relative w-full py-space-xl overflow-hidden">
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 right-0 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm uppercase tracking-widest text-secondary-container mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span>SEC.02 // PHARMACOLOGICAL DOSING CATALOG</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-secondary uppercase font-extrabold tracking-tight">
+            ALL FORMULATIONS
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-space-xs">
+            Military-spec, HPLC-verified compounds engineered without proprietary masking. Selected raw isolates, micro-filtered bioactives, and ATP synthesis drivers.
+          </p>
+</div>
+<div class="flex items-center gap-space-md bg-surface-container px-space-md py-space-sm rounded shadow-sm">
+<div class="text-right">
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">ACTIVE TELEMETRY</span>
+<span class="font-headline-sm text-headline-sm text-secondary-container font-bold">24 / 24 BATCHES STOCKED</span>
+</div>
+<span class="material-symbols-outlined text-secondary-container text-[28px]">verified_user</span>
+</div>
+</div>
+<!-- Quick Category Selectors -->
+<div class="flex items-center gap-space-sm overflow-x-auto pb-space-xs no-scrollbar">
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider font-bold shadow-md transition-all shrink-0">
+          All Formulations [08]
+        </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm transition-all shrink-0">
+          Whey &amp; Plant Proteins
+        </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm transition-all shrink-0">
+          Pre-Workout &amp; Energy
+        </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm transition-all shrink-0">
+          Creatine &amp; Strength
+        </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm transition-all shrink-0">
+          Recovery &amp; Amino Acids
+        </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm transition-all shrink-0">
+          Vitamins &amp; Health
+        </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm transition-all shrink-0">
+          Apparel &amp; Shakers
+        </button>
+</div>
+</div>
+</section>
+<!-- MAIN CATALOG INTERFACE: ASYMMETRIC FILTER RAIL + PRODUCT MATRIX -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl items-start">
+<!-- LEFT FILTER DOCK (3 COLS) -->
+<aside class="lg:col-span-3 flex flex-col gap-space-lg bg-surface-container-low p-space-lg rounded shadow-md sticky top-24">
+<div class="flex items-center justify-between pb-space-sm border-none">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm uppercase text-secondary font-bold">FILTERS</span>
+</div>
+<button class="font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-primary transition-colors tracking-widest">
+          RESET ALL
+        </button>
+</div>
+<!-- Live In-Stock Toggle -->
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary font-bold uppercase">READY SHIP ONLY</span>
+<span class="font-label-sm text-label-sm text-secondary-container">Vault Temperature Stabilized</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-secondary after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary-container"></div>
+</label>
+</div>
+<!-- Target Goal Filter -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-primary">01 // TARGET KINETIC GOAL</span>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<label class="flex items-center gap-space-sm cursor-pointer hover:text-secondary group">
+<span class="w-4 h-4 rounded-sm bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="flex-1 text-on-surface">Hypertrophy / Muscle Mass</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">[04]</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer hover:text-secondary group">
+<span class="w-4 h-4 rounded-sm bg-surface-container-highest flex items-center justify-center text-transparent group-hover:text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="flex-1 text-on-surface-variant group-hover:text-on-surface">High-Output Power &amp; ATP</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">[03]</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer hover:text-secondary group">
+<span class="w-4 h-4 rounded-sm bg-surface-container-highest flex items-center justify-center text-transparent group-hover:text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="flex-1 text-on-surface-variant group-hover:text-on-surface">Metabolic Cut / Lipolysis</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">[02]</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer hover:text-secondary group">
+<span class="w-4 h-4 rounded-sm bg-surface-container-highest flex items-center justify-center text-transparent group-hover:text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="flex-1 text-on-surface-variant group-hover:text-on-surface">Cellular Hydration &amp; Electrolytes</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">[02]</span>
+</label>
+</div>
+</div>
+<!-- Dietary / Purity Protocol -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-secondary-container">02 // CLINICAL PURITY FILTER</span>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<label class="flex items-center gap-space-sm cursor-pointer group">
+<span class="w-4 h-4 rounded-sm bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="flex-1 text-on-surface">Informed-Choice Tested</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer group">
+<span class="w-4 h-4 rounded-sm bg-surface-container-highest flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="flex-1 text-on-surface-variant group-hover:text-on-surface">Zero Added Sugar &amp; Aspartame</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer group">
+<span class="w-4 h-4 rounded-sm bg-surface-container-highest flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="flex-1 text-on-surface-variant group-hover:text-on-surface">100% Vegan Micro-Fermented</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer group">
+<span class="w-4 h-4 rounded-sm bg-surface-container-highest flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="flex-1 text-on-surface-variant group-hover:text-on-surface">Gluten &amp; Soy Antigen Free</span>
+</label>
+</div>
+</div>
+<!-- Price Spectrum Slider -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-on-surface">03 // PRICE THRESHOLD</span>
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wider">$20 — $100+</span>
+</div>
+<input class="w-full accent-primary-container bg-surface-container-highest h-1 rounded appearance-none cursor-pointer" max="100" min="20" type="range" value="80"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>MIN $20</span>
+<span>MAX $100</span>
+</div>
+</div>
+<!-- Flavor Profile Selector -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-on-surface">04 // TASTE LAB MATRIX</span>
+<div class="flex flex-wrap gap-space-xs mt-space-xs">
+<button class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm uppercase hover:bg-primary-container hover:text-on-primary-container transition-all">Cocoa/Lava</button>
+<button class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm uppercase hover:bg-primary-container hover:text-on-primary-container transition-all">Sour Citrus</button>
+<button class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm uppercase hover:bg-primary-container hover:text-on-primary-container transition-all">Vanilla Soft</button>
+<button class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm uppercase hover:bg-primary-container hover:text-on-primary-container transition-all">Blue Raspberry</button>
+<button class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm uppercase hover:bg-primary-container hover:text-on-primary-container transition-all">Unflavored Pure</button>
+</div>
+</div>
+</aside>
+<!-- RIGHT CATALOG CONTAINER & 4-COL GRID (9 COLS) -->
+<main class="lg:col-span-9 flex flex-col gap-space-lg">
+<!-- SUB-TOOLBAR: SORT + COUNTER -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded shadow-sm">
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface uppercase tracking-wider">
+<span class="font-bold text-secondary">8 ACTIVE FORMULAS</span>
+<span class="text-on-surface-variant">|</span>
+<span class="text-on-surface-variant">SHOWING BATCH SPEC 2025.Q1</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider shrink-0" for="catalog-sort">SORT INSTRUMENT:</label>
+<div class="relative inline-block w-48">
+<select class="w-full bg-surface-container text-on-surface font-body-sm text-body-sm px-space-sm py-space-xs rounded appearance-none focus:outline-none focus:bg-surface-container-high cursor-pointer" id="catalog-sort">
+<option>FEATURED / CLINICAL TIER</option>
+<option>HIGHEST RATED (HPLC 99%+)</option>
+<option>PRICE: LOW TO HIGH</option>
+<option>BEST SELLING IN ATHLETICS</option>
+</select>
+<span class="material-symbols-outlined text-[16px] absolute right-2 top-2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+</div>
+<!-- 4-COLUMN PRODUCT GRID -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- CARD 1: ISO-MATRIX Whey Isolate -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded p-space-md flex flex-col justify-between transition-all duration-300 shadow-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase">
+                BESTSELLER
+              </span>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold tracking-wider">
+                92% BIOAVAIL
+              </span>
+</div>
+<!-- Product Visual Media -->
+<div class="relative w-full h-52 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center p-space-sm mb-space-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="High-end sleek dark carbon athletic protein tub of ISO-MATRIX Whey Isolate sitting on a dark reflective surface with laser orange ambient accent lighting and bio-metric lab readouts in the blurred background, ultra-sharp 3d render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ-_vW8UPQ_R5j9vn3sQBCxkd5wuyjPAXQTNvoHDAMWaqaDV3ib831XMfenKDyv5NRUpSam1OhySCNyidZkinh4G7ZWEXGwIvCC1RPwbDL5Ul3I2noF5AOj6MHzW3Klx5toOd4HyLPNmft9LlltVktHgAsTupXtfxCy3KxbWJO-UdY9ykuHhr5GYundK9jRFb6E86mK4rE79JkVXJIMQzw0oyXjoI0Xh-vxbnq1_k"/>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+                71 SERVINGS
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary">ISOLATE // PROTEIN FRACTION</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-secondary group-hover:text-primary transition-colors">
+                ISO-MATRIX Whey Isolate
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Cross-flow micro-filtered whey isolate. 27g protein, 0g sugar, 5.9g BCAAs per scoop.
+              </p>
+</div>
+<!-- Flavor Swatches -->
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">FLAVOR:</span>
+<button class="w-4 h-4 rounded-full bg-[#3d2314] ring-2 ring-primary" title="Chocolate Lava"></button>
+<button class="w-4 h-4 rounded-full bg-[#fdf5e6] opacity-80 hover:opacity-100" title="Vanilla Soft-Serve"></button>
+<button class="w-4 h-4 rounded-full bg-[#656360] opacity-80 hover:opacity-100" title="Cookies &amp; Cream"></button>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-metric-display text-metric-display text-secondary font-bold">$64.99</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">$0.91 / SERVING</span>
+</div>
+<button class="w-full py-space-sm rounded bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+              QUICK ADD
+            </button>
+</div>
+</div>
+<!-- CARD 2: KINETIC-DRIVE V2 Pre-Workout -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded p-space-md flex flex-col justify-between transition-all duration-300 shadow-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary-container"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase">
+                HIGH POTENCY
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider">
+                350MG CAFFEINE
+              </span>
+</div>
+<!-- Product Visual Media -->
+<div class="relative w-full h-52 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center p-space-sm mb-space-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic matte black sports pre-workout tub labeled KINETIC-DRIVE V2 with neon volt accents, electric vapor tendrils, and biometric lab typography, sharp studio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBveiPegne4GMQbm9p7Zfy8Vp4GD0FFJ1CegqHf2Sf_irZ86e2RNs_0rWuqHie_vIdgDEbo9ekv6Nhm0hP_6OBn2HUZewGtXLx8fURvKDGYHSq8pkFP5hPfVIfaTURnu5tAbfbv_huEi4EDrDgGnS55ilA3OvBPa4GQ7dhjpRdG4ooMwyqPM_eIszAnO4-PgO9ib64arnhWykgD2o8OsEQEskv4FkDtdhXZWLLbLcM"/>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+                30 SERVINGS
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container">NEURO-PUMP MATRIX</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-secondary group-hover:text-secondary-container transition-colors">
+                KINETIC-DRIVE V2
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                6g L-Citrulline Malate, 3.2g Beta-Alanine, and sustained-release caffeine tri-source.
+              </p>
+</div>
+<!-- Flavor Swatches -->
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">FLAVOR:</span>
+<button class="w-4 h-4 rounded-full bg-[#99ff00] ring-2 ring-secondary-container" title="Electric Lime"></button>
+<button class="w-4 h-4 rounded-full bg-[#00bfff] opacity-80 hover:opacity-100" title="Blue Raspberry"></button>
+<button class="w-4 h-4 rounded-full bg-[#ff007f] opacity-80 hover:opacity-100" title="Sour Gummy"></button>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-metric-display text-metric-display text-secondary font-bold">$49.99</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">$1.66 / SERVING</span>
+</div>
+<button class="w-full py-space-sm rounded bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+              QUICK ADD
+            </button>
+</div>
+</div>
+<!-- CARD 3: CREAPURE® Micronized Creatine -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded p-space-md flex flex-col justify-between transition-all duration-300 shadow-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-tertiary"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm font-bold uppercase">
+                STAPLE
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold tracking-wider">
+                99.9% GERMAN PURE
+              </span>
+</div>
+<!-- Product Visual Media -->
+<div class="relative w-full h-52 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center p-space-sm mb-space-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist dark grey container of Creapure Micronized Creatine 500g powder with cyan technical holographic badge, professional sports lab aesthetic, high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMBnTwoxzAJogudrylk8KVK3X_kvBhidrt0BGgj9uxX-llipdU7F6Oaug9bM26nj7toXFoHsnmRwFssjIitY89befVoNiSYPL5NH8FyDjd2or3AQb2KOQP9n2JM9i1D9EFEVE7ba3-_780GNgutEPD6oOXCaMty1vAl9eNEmlJpzxW1n6ngwozupS8hNoKZZskY5RZsghO7Mp1wMK7Q586D0sR7RxPkG6eZ7XLm_8"/>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+                100 SERVINGS
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary">ATP RESTORATION</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-secondary group-hover:text-tertiary transition-colors">
+                CREAPURE® Creatine
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                100% genuine German-synthesized micronized creatine monohydrate. Rapid ATP replenishment.
+              </p>
+</div>
+<!-- Flavor Swatches -->
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">FLAVOR:</span>
+<button class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold" title="Raw Pure Unflavored">RAW UNFLAVORED</button>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-metric-display text-metric-display text-secondary font-bold">$34.99</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">$0.34 / SERVING</span>
+</div>
+<button class="w-full py-space-sm rounded bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+              QUICK ADD
+            </button>
+</div>
+</div>
+<!-- CARD 4: NIGHT-MATRIX Sleep & GH Recovery -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded p-space-md flex flex-col justify-between transition-all duration-300 shadow-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-container-highest"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold uppercase">
+                CIRCADIAN LAB
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider">
+                DEEP REM OPTIMIZED
+              </span>
+</div>
+<!-- Product Visual Media -->
+<div class="relative w-full h-52 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center p-space-sm mb-space-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Tactical recovery supplement jar with deep purple and carbon fiber finish labeled NIGHT-MATRIX Sleep and GH Recovery Formula, dark laboratory lighting setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvWIyZFM5tJ__7ZFrLTjEKNs4rIT_xEf7U_Reg5Ar_pz2zs3FMoPwXmIdZuMhcUUyli08_Jh8GHaPwPJdQzu_o1m-KdoEa0uEmBWfAGjw0KWo1Q4On4RSvVMYKV_oU-8-lJNxUZB2_c5mD1OtgBvwiS5wo7DXhDdcFwQJrgG4zQqhC4AkY9aDd7Eqv59IrCxGE-B0FIqKH3Y98Qk1IDMpxAoAWVnlJzxCBOY6aSp0"/>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+                30 SERVINGS
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">ANABOLIC SLEEP</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-secondary group-hover:text-primary transition-colors">
+                NIGHT-MATRIX Formula
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Magnesium Bisglycinate, L-Theanine, GABA &amp; Sensoril Ashwagandha for deep endocrine restoration.
+              </p>
+</div>
+<!-- Flavor Swatches -->
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">FLAVOR:</span>
+<button class="w-4 h-4 rounded-full bg-[#4B0082] ring-2 ring-primary" title="Blackberry Lemonade"></button>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-metric-display text-metric-display text-secondary font-bold">$42.99</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">$1.43 / SERVING</span>
+</div>
+<button class="w-full py-space-sm rounded bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+              QUICK ADD
+            </button>
+</div>
+</div>
+<!-- CARD 5: INTRA-DRIVE 9-EAA -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded p-space-md flex flex-col justify-between transition-all duration-300 shadow-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-container-highest"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold uppercase">
+                FERMENTED
+              </span>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold tracking-wider">
+                10G ACTIVE AMINOS
+              </span>
+</div>
+<!-- Product Visual Media -->
+<div class="relative w-full h-52 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center p-space-sm mb-space-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Athletic nutrition packaging for INTRA-DRIVE 9-EAA Amino Complex, peach tones combined with tactical dark grey polymer canister, cinematic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGcDIt9PYp4aMUvTNlojOWys0fkzgKTRPckhEIBIOA7rR9lKhDt3OofzIRBHVaM6X1gHIwRTYaJI52n4yNdKIlc2meuazte2Um8hgJ4q2reWPFoJ-vHnvWO6tE-G5UQfG0WvXI3fx7Xwd8SXSpssUFc7Em5KHOFPjLdxUC8q_sn9noJRwQrB2pQZdXN6811jZVzNS1jhvbculC8eK3xhRSl1gjZBXAQSNkZ0CHn9U"/>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+                40 SERVINGS
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">INTRA-WORKOUT BIOACTIVES</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-secondary group-hover:text-secondary-container transition-colors">
+                INTRA-DRIVE 9-EAA
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                All 9 essential amino acids in human plasma ratios with AstraGin® for accelerated intestinal uptake.
+              </p>
+</div>
+<!-- Flavor Swatches -->
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">FLAVOR:</span>
+<button class="w-4 h-4 rounded-full bg-[#ff9966] ring-2 ring-secondary-container" title="Peach Mango"></button>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-metric-display text-metric-display text-secondary font-bold">$38.99</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">$0.97 / SERVING</span>
+</div>
+<button class="w-full py-space-sm rounded bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+              QUICK ADD
+            </button>
+</div>
+</div>
+<!-- CARD 6: THERMO-SHRED Metabolic Fire -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded p-space-md flex flex-col justify-between transition-all duration-300 shadow-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase">
+                FAT LOSS
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider">
+                MITOCHONDRIAL
+              </span>
+</div>
+<!-- Product Visual Media -->
+<div class="relative w-full h-52 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center p-space-sm mb-space-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="High-end amber glass medical style capsule bottle labeled THERMO-SHRED Metabolic Fire with clinical biometric markers and orange glowing rim light, clean rendering" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZGsRVj_sh-6MtVKUP-tnGPLbWrZvoBMMTLd0YFSR8X7gr8JIBG66meEIgUBSarJOw7S0ijRkz1uHFpRBIljGhF9LSv95s9FuagOtve1CTV0wgdOXs5m6Ti19Q1ldW7VNhCXqlxRtwLERWYhy_zVTfiMD6mt-GnVcQA5rUQIEnFIaM9ITw--7ocxG3fJWYTq9CvJ77HVX0IUzURt4c1BwA1BO2ptc1DXS-CpMnJlg"/>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+                60 CAPSULES
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-primary">THERMOGENIC CALORIC DRAIN</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-secondary group-hover:text-primary transition-colors">
+                THERMO-SHRED Fire
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Paradoxine® Grains of Paradise, Capsimax, and Acetyl-L-Carnitine for heightened metabolic expenditure.
+              </p>
+</div>
+<!-- Formulation Tag -->
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">DELIVERY:</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold">VEGAN HYPROMELLOSE CAPS</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-metric-display text-metric-display text-secondary font-bold">$44.99</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">$0.74 / DOSE</span>
+</div>
+<button class="w-full py-space-sm rounded bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+              QUICK ADD
+            </button>
+</div>
+</div>
+<!-- CARD 7: HYDRA-PRO Himalayan Pink Salt -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded p-space-md flex flex-col justify-between transition-all duration-300 shadow-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-tertiary-container"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold uppercase">
+                ELECTROLYTE
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold tracking-wider">
+                1000MG SODIUM
+              </span>
+</div>
+<!-- Product Visual Media -->
+<div class="relative w-full h-52 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center p-space-sm mb-space-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Athletic hydration powder canister labeled HYDRA-PRO Himalayan Pink Salt with clean ice blue backlighting, crystalline texture accents and aerospace tech typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdXWg94HJmj6vfmV-bjz9OVg_S0a-Sb8nsUxzNP-OaIBMHakcbBiUpDqLqKzLA6foWGFnUW9rBVlmvL06ON9PZOXkjuCKNdlqYWpBMzAsX-yztvgRqdkU7uri9V7ePk_s4onR4D31Ann0Ej1HJE3OJwebQd3wxbi_5RI3V3DODqw7JDLGAwjA2ogkwJX8noqQieZyNC9TyWABz0ymCDh46jB8vAs3575MxYKfnqNc"/>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+                60 PACKETS
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary">OSMOTIC HYDRATION</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-secondary group-hover:text-tertiary transition-colors">
+                HYDRA-PRO Minerals
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Natural pink salt substrate with potassium malate and chelated magnesium. Zero sugar.
+              </p>
+</div>
+<!-- Flavor Swatches -->
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">FLAVOR:</span>
+<button class="w-4 h-4 rounded-full bg-[#ffcc00] ring-2 ring-tertiary" title="Citrus Blast"></button>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-metric-display text-metric-display text-secondary font-bold">$29.99</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">$0.49 / PACKET</span>
+</div>
+<button class="w-full py-space-sm rounded bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+              QUICK ADD
+            </button>
+</div>
+</div>
+<!-- CARD 8: APEX MASS Clean Gainer -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded p-space-md flex flex-col justify-between transition-all duration-300 shadow-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-container-highest"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold uppercase">
+                CALORIC DENSITY
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider">
+                1200 KCAL
+              </span>
+</div>
+<!-- Product Visual Media -->
+<div class="relative w-full h-52 bg-surface-container-lowest rounded overflow-hidden flex items-center justify-center p-space-sm mb-space-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Heavyweight massive sports nutrition gainer bag labeled APEX MASS Clean Gainer in matte textured black with high-visibility technical data graphics and bold typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChNs4614Y4JIuxIQWM-Pvvos2SK7ph4bkGWCygGkwE9r7yAX6t4Al231OtkoGk23zgedlyOguUROfHoMaK-OYjkacs-j-87MIhS-U7djSIizBErAKI7eiAjIvzxcQ5cMWzbXHzozSa5Mi60CJXgKQMDsiDB3X2B7hvvPe28U3uwfAgsbctGNt0h1YdPByokEjdEcRYKjScFjaXdzarAw9auHVwKWGa5KNAdixHXsY"/>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+                22 MASS SERVINGS
+              </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">CLEAN HYPERTROPHY SUBSTRATE</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-secondary group-hover:text-primary transition-colors">
+                APEX MASS Clean Gainer
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Whole oat flour, sweet potato carbohydrate complex, 60g bioactive whey, and MCT lipid matrix.
+              </p>
+</div>
+<!-- Flavor Swatches -->
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">FLAVOR:</span>
+<button class="w-4 h-4 rounded-full bg-[#2a1810] ring-2 ring-primary" title="Rich Dark Cocoa"></button>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-metric-display text-metric-display text-secondary font-bold">$74.99</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">$3.40 / SERVING</span>
+</div>
+<button class="w-full py-space-sm rounded bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container text-on-primary-container font-label-md text-label-md font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+              QUICK ADD
+            </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- BUNDLE / STACK BUILDER PROMO BANNER -->
+<section class="w-full bg-surface-container-high rounded p-space-lg md:p-space-xl mb-space-xl relative overflow-hidden shadow-xl">
+<div class="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-primary/10 to-transparent pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary-container font-label-sm text-label-sm uppercase font-bold tracking-widest">
+<span class="material-symbols-outlined text-[16px]">layers</span>
+<span>PROGRAMMATIC PROTOCOL // CUSTOM BUNDLE ENGINE</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-secondary uppercase tracking-tight">
+          BUILD A 3-PIECE STACK &amp; UNLOCK 20% MARGIN RELIEF
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pair an Anabolic Protein Base with KINETIC-DRIVE V2 and CREAPURE® for maximum bioenergetic synergy. Includes complimentary stainless laboratory-grade telemetry shaker.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 w-full lg:w-auto">
+<div class="bg-surface-container-lowest px-space-md py-space-sm rounded text-center w-full sm:w-auto">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">AUTOMATIC AT CHECKOUT</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">SAVE $30+ TOTAL</span>
+</div>
+<button class="w-full sm:w-auto px-space-xl py-space-md bg-secondary-container hover:bg-primary-container text-on-secondary-container hover:text-on-primary-container transition-colors rounded font-headline-sm text-headline-sm font-bold uppercase tracking-wider shadow-lg">
+          INITIALIZE STACK BUILDER
+        </button>
+</div>
+</div>
+</section>
+<!-- COMPARISON DATA MATRIX & TECHNICAL READOUT -->
+<section class="w-full bg-surface-container-low rounded p-space-lg md:p-space-xl mb-space-xl shadow-md">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold block mb-space-xs">
+          ANALYTICAL TELEMETRY SPECIFICATION
+        </span>
+<h2 class="font-headline-md text-headline-md font-bold text-secondary uppercase tracking-tight">
+          BIOACTIVE FORMULATION MATRIX &amp; DOSING INTEGRITY
+        </h2>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-container"></span> HPLC CERTIFIED</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> CLINICAL THERAPEUTIC DOSE</span>
+</div>
+</div>
+<!-- Responsive Analytical Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container text-secondary font-label-md text-label-md uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l">FORMULATION</th>
+<th class="py-space-sm px-space-md">KEY BIOACTIVES</th>
+<th class="py-space-sm px-space-md">WADA / INFORMED</th>
+<th class="py-space-sm px-space-md">HPLC PURITY %</th>
+<th class="py-space-sm px-space-md">SERVING CADENCE</th>
+<th class="py-space-sm px-space-md rounded-r text-right">UNIT VALUATION</th>
+</tr>
+</thead>
+<tbody class="divide-none">
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-md font-bold text-secondary">
+              ISO-MATRIX Whey Isolate
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              27g Whey Isolate, 5.9g BCAA, 0g Lactose
+            </td>
+<td class="py-space-md px-space-md text-secondary-container font-bold font-label-sm text-label-sm">
+              PASSED // ZERO BANNED
+            </td>
+<td class="py-space-md px-space-md font-bold text-secondary">
+              99.2% Active Isolate
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              Post-Workout / Morning
+            </td>
+<td class="py-space-md px-space-md text-right font-headline-sm text-headline-sm font-bold text-secondary">
+              $64.99
+            </td>
+</tr>
+<tr class="bg-surface-container-lowest/50 hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-md font-bold text-secondary">
+              KINETIC-DRIVE V2
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              6000mg L-Citrulline, 3200mg Beta-Alanine
+            </td>
+<td class="py-space-md px-space-md text-secondary-container font-bold font-label-sm text-label-sm">
+              PASSED // ZERO BANNED
+            </td>
+<td class="py-space-md px-space-md font-bold text-secondary">
+              98.8% Compound Assay
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              20m Pre-Exertion
+            </td>
+<td class="py-space-md px-space-md text-right font-headline-sm text-headline-sm font-bold text-secondary">
+              $49.99
+            </td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-md font-bold text-secondary">
+              CREAPURE® Creatine 500g
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              5000mg German Creapure® Monohydrate
+            </td>
+<td class="py-space-md px-space-md text-secondary-container font-bold font-label-sm text-label-sm">
+              PASSED // ZERO BANNED
+            </td>
+<td class="py-space-md px-space-md font-bold text-secondary">
+              99.9% Monohydrate
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              Daily Saturation (5g)
+            </td>
+<td class="py-space-md px-space-md text-right font-headline-sm text-headline-sm font-bold text-secondary">
+              $34.99
+            </td>
+</tr>
+<tr class="bg-surface-container-lowest/50 hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-md font-bold text-secondary">
+              NIGHT-MATRIX Recovery
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              400mg Mag Bisglycinate, 200mg L-Theanine
+            </td>
+<td class="py-space-md px-space-md text-secondary-container font-bold font-label-sm text-label-sm">
+              PASSED // ZERO BANNED
+            </td>
+<td class="py-space-md px-space-md font-bold text-secondary">
+              99.1% Bioactive Chelates
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              30m Prior to REM Sleep
+            </td>
+<td class="py-space-md px-space-md text-right font-headline-sm text-headline-sm font-bold text-secondary">
+              $42.99
+            </td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-md font-bold text-secondary">
+              HYDRA-PRO Himalayan Salts
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              1000mg Sodium, 200mg Potassium, 60mg Mag
+            </td>
+<td class="py-space-md px-space-md text-secondary-container font-bold font-label-sm text-label-sm">
+              PASSED // ZERO BANNED
+            </td>
+<td class="py-space-md px-space-md font-bold text-secondary">
+              100% Electrolyte Salts
+            </td>
+<td class="py-space-md px-space-md text-on-surface-variant">
+              Intra / Post Prolonged Session
+            </td>
+<td class="py-space-md px-space-md text-right font-headline-sm text-headline-sm font-bold text-secondary">
+              $29.99
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for category filter pill switching
+  document.querySelectorAll('section button').forEach(button => {
+    button.addEventListener('click', function() {
+      if (this.innerText.includes('Formulations') || this.innerText.includes('Proteins') || this.innerText.includes('Pre-Workout')) {
+        document.querySelectorAll('section button').forEach(btn => {
+          btn.className = "px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold shadow-sm transition-all shrink-0";
+        });
+        this.className = "px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider font-bold shadow-md transition-all shrink-0";
+      }
+    });
+  });
+</script></div></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="bg-surface-container-low py-space-lg"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin grid grid-cols-1 md:grid-cols-3 gap-space-lg"><div class="flex items-center gap-space-md"><div class="p-space-sm bg-surface-container rounded"><span class="material-symbols-outlined text-secondary-container text-[24px]">verified</span></div><div><div class="font-headline-sm text-headline-sm font-bold text-secondary uppercase">Informed-Choice Tested</div><div class="font-body-sm text-body-sm text-on-surface-variant">Batch tested for over 280+ WADA banned compounds.</div></div></div><div class="flex items-center gap-space-md"><div class="p-space-sm bg-surface-container rounded"><span class="material-symbols-outlined text-primary text-[24px]">biotech</span></div><div><div class="font-headline-sm text-headline-sm font-bold text-secondary uppercase">Clinical Dosing Protocol</div><div class="font-body-sm text-body-sm text-on-surface-variant">Zero proprietary blends. 100% active compound transparency.</div></div></div><div class="flex items-center gap-space-md"><div class="p-space-sm bg-surface-container rounded"><span class="material-symbols-outlined text-tertiary text-[24px]">local_shipping</span></div><div><div class="font-headline-sm text-headline-sm font-bold text-secondary uppercase">Cold-Chain Vault Logistics</div><div class="font-body-sm text-body-sm text-on-surface-variant">Thermally regulated storage preserving peptide integrity.</div></div></div></div></div><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-xl"><div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl"><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md font-bold text-secondary">VORTEX LABS</span><span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">SEC.01 // LAB</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Aerospace-grade biomathematical nutrition engineered for high-output human kinetics, maximum ATP output, and neurological resilience.</p><div class="bg-surface-container p-space-lg rounded max-w-md flex flex-col gap-space-sm"><div class="font-label-md text-label-md uppercase tracking-wider text-secondary-container font-bold">Access Performance Dossier &amp; 15% Off</div><p class="font-body-sm text-body-sm text-on-surface-variant">Receive third-party HPLC reports and unlock 15% discount on inaugural batch allocation.</p><div class="flex gap-space-xs mt-space-xs"><input class="bg-surface-container-low px-space-md py-space-sm rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline flex-1 focus:outline-none" placeholder="athlete.id@vortexlabs.io" type="email"/><button class="bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container transition-colors text-on-primary-container px-space-lg py-space-sm rounded font-label-md text-label-md font-bold uppercase tracking-wider shrink-0" type="button">Engage</button></div></div></div><div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-gutter"><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md font-bold uppercase tracking-widest text-on-surface">Formulations</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors cursor-pointer">Ion-Filtered Whey Isolate</li><li class="hover:text-on-surface transition-colors cursor-pointer">Hyper-Drive Pre-Workout</li><li class="hover:text-on-surface transition-colors cursor-pointer">Creapure® ATP Matrix</li><li class="hover:text-on-surface transition-colors cursor-pointer">Electrolyte Telemetry Salts</li><li class="hover:text-on-surface transition-colors cursor-pointer">Night-Cycle Recovery Peptides</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md font-bold uppercase tracking-widest text-on-surface">Scientific Spec</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors cursor-pointer">Batch HPLC Telemetry</li><li class="hover:text-on-surface transition-colors cursor-pointer">NSF Certified for Sport</li><li class="hover:text-on-surface transition-colors cursor-pointer">cGMP Facility Validation</li><li class="hover:text-on-surface transition-colors cursor-pointer">Heavy Metal Assay Data</li><li class="hover:text-on-surface transition-colors cursor-pointer">Research Whitepapers</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md font-bold uppercase tracking-widest text-on-surface">Command</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface transition-colors cursor-pointer">Athlete Portal</li><li class="hover:text-on-surface transition-colors cursor-pointer">Subscription Cadence</li><li class="hover:text-on-surface transition-colors cursor-pointer">Military &amp; First Responder</li><li class="hover:text-on-surface transition-colors cursor-pointer">Shipping Registry</li><li class="hover:text-on-surface transition-colors cursor-pointer">Contact Biological Support</li></ul></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-md flex-wrap"><span class="px-space-sm py-space-xs bg-surface-container rounded font-bold text-on-surface">NSF SPORT</span><span class="px-space-sm py-space-xs bg-surface-container rounded font-bold text-on-surface">INFORMED-CHOICE</span><span class="px-space-sm py-space-xs bg-surface-container rounded font-bold text-on-surface">cGMP REGISTERED</span><span class="px-space-sm py-space-xs bg-surface-container rounded font-bold text-on-surface">ISO/IEC 17025</span></div><div class="flex items-center gap-space-md"><span class="font-body-sm text-body-sm">© 2025 VORTEX LABS PRECISION BIOMETRICS. ALL RIGHTS RESERVED.</span><div class="flex gap-space-sm"><span class="hover:text-on-surface cursor-pointer">PRIVACY PROTOCOL</span><span>//</span><span class="hover:text-on-surface cursor-pointer">TERMS OF SUPPLY</span></div></div></div></div></footer></body></html>

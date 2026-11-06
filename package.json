@@ -1,0 +1,19 @@
+{
+  "name": "stitch-gym-supplements-e-commerce-platform",
+  "version": "1.0.0",
+  "description": "Full stack e-commerce platform for Stitch Gym Supplements / Vortex Labs",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "node backend/src/server.js",
+    "backend": "cd backend && npm run dev",
+    "install:all": "cd backend && npm install"
+  },
+  "keywords": [
+    "ecommerce",
+    "fitness",
+    "gym-supplements",
+    "vortex-labs"
+  ],
+  "author": "Stitch Vortex Labs",
+  "license": "MIT"
+}

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biometric Performance Hub | Stitch Gym Supplements - Vortex Labs</title>
+  
+  <!-- Google Fonts: Rajdhani & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Navbar -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="site-logo">
+        <div class="logo-icon-wrap">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 8.5 2 15.5 12 22 22 15.5 22 8.5 12 2"></polygon>
+            <line x1="12" y1="22" x2="12" y2="15.5"></line>
+            <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-brand-stitch">STITCH <span>LABS</span></span>
+          <span class="logo-subtext">VORTEX PERFORMANCE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="interactive_catalog.html" class="nav-link">Interactive Range</a>
+        <a href="biometric.html" class="nav-link active">Biometric Performance</a>
+        <a href="cart.html" class="nav-link">Cart & Fast Pay</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-icon-btn" aria-label="View Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">2</span>
+        </a>
+        <button class="mobile-toggle-btn" aria-label="Toggle navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="products.html" class="nav-link">Products Catalog</a>
+    <a href="interactive_catalog.html" class="nav-link">Interactive Range 3D</a>
+    <a href="biometric.html" class="nav-link active">Biometric Calculator & Tracker</a>
+    <a href="cart.html" class="nav-link">Cart & Checkout</a>
+  </div>
+
+  <main>
+    <!-- Hero Section with Animated Metrics Counters -->
+    <section class="biometric-hero">
+      <div class="container">
+        <span class="section-tag neon">Clinical Performance Engine</span>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 4rem); margin-top: 10px;">
+          TRACK YOUR <span class="text-cyan">BIOMETRIC PERFORMANCE</span>
+        </h1>
+        <p style="color: var(--text-secondary); max-width: 720px; margin: 12px auto 0 auto; font-size: 1.1rem;">
+          Unlock customized cellular fueling algorithms. Calculate your exact basal caloric expenditure, lean protein requirements, and monitor progressive barbell overload over time.
+        </p>
+
+        <!-- Stats Counter Strip -->
+        <div class="stats-counter-strip">
+          <div class="stat-counter-box">
+            <div class="stat-counter-num text-cyan" id="countPeptide">99.4%</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px; text-transform: uppercase;">Peptide Bio-Absorption</div>
+          </div>
+          <div class="stat-counter-box">
+            <div class="stat-counter-num text-neon" id="countAnabolism">4.8x</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px; text-transform: uppercase;">Muscle Protein Synthesis Rate</div>
+          </div>
+          <div class="stat-counter-box">
+            <div class="stat-counter-num text-white" id="countRecovery">24H</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px; text-transform: uppercase;">Target Glycogen Window</div>
+          </div>
+          <div class="stat-counter-box">
+            <div class="stat-counter-num text-cyan" id="countTested">100%</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px; text-transform: uppercase;">WADA Banned-Substance Free</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Biometric Calculator Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Algorithm Precision</span>
+          <h2 class="section-title">BIOMETRIC <span class="text-cyan">CALCULATOR</span></h2>
+          <p class="section-subtitle">Based on the clinically benchmarked Mifflin-St Jeor formula and ISSN athletic protein guidelines.</p>
+        </div>
+
+        <div class="calculator-grid">
+          <!-- Input Form Card -->
+          <div class="calc-form-card">
+            <form id="biometricForm" onsubmit="handleBiometricCalculate(event)">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="bioWeight">Body Weight (kg) *</label>
+                  <input type="number" id="bioWeight" class="form-control" placeholder="e.g. 78" required min="35" max="250" value="78" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="bioHeight">Height (cm) *</label>
+                  <input type="number" id="bioHeight" class="form-control" placeholder="e.g. 178" required min="100" max="240" value="178" />
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="bioAge">Age (Years) *</label>
+                  <input type="number" id="bioAge" class="form-control" placeholder="e.g. 26" required min="14" max="99" value="26" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="bioGender">Biological Profile *</label>
+                  <select id="bioGender" class="form-control" style="cursor: pointer;">
+                    <option value="male">Male (Standard)</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bioActivity">Activity Level *</label>
+                <select id="bioActivity" class="form-control" style="cursor: pointer;">
+                  <option value="moderate" selected>Moderately Active (Gym 3-5 days/week)</option>
+                  <option value="light">Lightly Active (Light exercise 1-3 days)</option>
+                  <option value="very">Very Active (Hard training 6-7 days/week)</option>
+                  <option value="extreme">Elite Athlete / Double Sessions (Physical job + 2x lift)</option>
+                  <option value="sedentary">Sedentary (Desk job / minimal movement)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bioGoal">Primary Ergogenic Goal *</label>
+                <select id="bioGoal" class="form-control" style="cursor: pointer;">
+                  <option value="hypertrophy" selected>Hypertrophy / Lean Muscle Mass (+400 kcal)</option>
+                  <option value="fatloss">Aggressive Fat Shred (-500 kcal Deficit)</option>
+                  <option value="endurance">Endurance & Athletic Peak Power (Maintenance)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" style="margin-top: 14px;">
+                Calculate Biometrics
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Results Card -->
+          <div class="calc-results-card">
+            <span class="section-tag neon" style="align-self: flex-start;">Live Diagnostics Output</span>
+            <h3 style="font-size: 1.8rem; margin: 12px 0 20px 0; color: #ffffff;">YOUR METABOLIC TARGETS</h3>
+
+            <div class="metric-result-item">
+              <div>
+                <strong style="color: #ffffff; display: block;">BMR (Basal Metabolic Rate)</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Caloric burn at absolute rest</span>
+              </div>
+              <span class="metric-result-val text-cyan" id="resBmr">1,758 kcal</span>
+            </div>
+
+            <div class="metric-result-item">
+              <div>
+                <strong style="color: #ffffff; display: block;">TDEE (Daily Energy Expenditure)</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Total calories burned per day</span>
+              </div>
+              <span class="metric-result-val text-white" id="resTdee">2,725 kcal</span>
+            </div>
+
+            <div class="metric-result-item" style="border-color: var(--neon-green); background: rgba(57, 255, 20, 0.05);">
+              <div>
+                <strong style="color: #ffffff; display: block;">Target Daily Protein Intake</strong>
+                <span style="font-size: 0.78rem; color: var(--neon-green);">ISSN recommended ratio (2.2g/kg)</span>
+              </div>
+              <span class="metric-result-val text-neon" id="resProtein">172 g/day</span>
+            </div>
+
+            <div class="metric-result-item">
+              <div>
+                <strong style="color: #ffffff; display: block;">Target Daily Water Intake</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Intracellular hydration volume</span>
+              </div>
+              <span class="metric-result-val text-cyan" id="resWater">3.1 L/day</span>
+            </div>
+
+            <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid var(--border-subtle);">
+              <span style="font-size: 0.85rem; color: var(--text-secondary); display: block; margin-bottom: 10px;">Recommended Base Formulation:</span>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 700; color: #ffffff;">ISO Matrix Isolate (2 scoops/day)</span>
+                <a href="product_detail.html" class="btn btn-secondary btn-sm">View Spec</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Stacks Section -->
+    <section class="section" style="background: rgba(10, 12, 18, 0.6); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag neon">Synergistic Stacks</span>
+          <h2 class="section-title">ENGINEERED <span class="text-neon">PERFORMANCE STACKS</span></h2>
+          <p class="section-subtitle">Bio-chemically paired compounds designed to amplify cellular ATP, eliminate muscle breakdown, and maximize adaptation.</p>
+        </div>
+
+        <div class="stacks-grid">
+          <!-- Stack 1: Muscle Gain Stack -->
+          <div class="stack-card">
+            <span class="product-badge neon" style="position: static; margin-bottom: 14px; align-self: flex-start;">Bundle Save 25%</span>
+            <h3 style="font-size: 1.6rem; color: #ffffff;">MUSCLE HYPERTROPHY STACK</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+              Designed for aggressive lean tissue accumulation, maximal satellite cell proliferation, and rapid ATP synthesis.
+            </p>
+
+            <div class="stack-products-list">
+              <div class="stack-prod-item">
+                <span class="text-cyan">01.</span>
+                <div style="flex: 1;">
+                  <strong style="color: #ffffff; font-size: 0.95rem;">ISO Matrix Isolate (2kg)</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Post-workout pure protein synthesis</div>
+                </div>
+                <span style="font-size: 0.88rem; color: var(--neon-green); font-weight: 700;">₹2,999</span>
+              </div>
+              <div class="stack-prod-item">
+                <span class="text-cyan">02.</span>
+                <div style="flex: 1;">
+                  <strong style="color: #ffffff; font-size: 0.95rem;">Creatine X-Force (300g)</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Cellular ATP & hydration volume</div>
+                </div>
+                <span style="font-size: 0.88rem; color: var(--neon-green); font-weight: 700;">₹999</span>
+              </div>
+              <div class="stack-prod-item">
+                <span class="text-cyan">03.</span>
+                <div style="flex: 1;">
+                  <strong style="color: #ffffff; font-size: 0.95rem;">Mass Gainer Pro (3kg)</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Clean complex carbohydrate surplus</div>
+                </div>
+                <span style="font-size: 0.88rem; color: var(--neon-green); font-weight: 700;">₹3,499</span>
+              </div>
+            </div>
+
+            <div style="margin-top: auto; padding-top: 18px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 0.8rem; color: var(--text-muted); text-decoration: line-through;">₹7,497</span>
+                <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #ffffff;">₹5,622</div>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="addToCart('iso-matrix-isolate', 1); addToCart('creatine-x-force', 1); addToCart('mass-gainer-pro', 1);">
+                Add Stack to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Stack 2: Shred & Lean Mass -->
+          <div class="stack-card">
+            <span class="product-badge sale" style="position: static; margin-bottom: 14px; align-self: flex-start;">Bundle Save 25%</span>
+            <h3 style="font-size: 1.6rem; color: #ffffff;">SHRED & VASCULARITY STACK</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+              Formulated to preserve precious muscle fibers during high-deficit caloric restriction while fueling intense fat oxidation.
+            </p>
+
+            <div class="stack-products-list">
+              <div class="stack-prod-item">
+                <span class="text-cyan">01.</span>
+                <div style="flex: 1;">
+                  <strong style="color: #ffffff; font-size: 0.95rem;">ISO Matrix Isolate (2kg)</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Zero sugar lean macro compliance</div>
+                </div>
+                <span style="font-size: 0.88rem; color: var(--neon-green); font-weight: 700;">₹2,999</span>
+              </div>
+              <div class="stack-prod-item">
+                <span class="text-cyan">02.</span>
+                <div style="flex: 1;">
+                  <strong style="color: #ffffff; font-size: 0.95rem;">Vortex Pre-Workout (300g)</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Extreme thermogenic training energy</div>
+                </div>
+                <span style="font-size: 0.88rem; color: var(--neon-green); font-weight: 700;">₹1,499</span>
+              </div>
+              <div class="stack-prod-item">
+                <span class="text-cyan">03.</span>
+                <div style="flex: 1;">
+                  <strong style="color: #ffffff; font-size: 0.95rem;">Glutamine Surge (250g)</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Anti-catabolic muscle preservation</div>
+                </div>
+                <span style="font-size: 0.88rem; color: var(--neon-green); font-weight: 700;">₹799</span>
+              </div>
+            </div>
+
+            <div style="margin-top: auto; padding-top: 18px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 0.8rem; color: var(--text-muted); text-decoration: line-through;">₹5,297</span>
+                <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #ffffff;">₹3,972</div>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="addToCart('iso-matrix-isolate', 1); addToCart('vortex-pre-workout', 1); addToCart('glutamine-surge', 1);">
+                Add Stack to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Stack 3: Endurance & Recovery -->
+          <div class="stack-card">
+            <span class="product-badge" style="position: static; margin-bottom: 14px; align-self: flex-start;">Bundle Save 25%</span>
+            <h3 style="font-size: 1.6rem; color: #ffffff;">RECOVERY & ENDURANCE STACK</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+              Combats systemic training inflammation, optimizes deep sleep REM cycles, and provides uninterrupted intra-workout hydration.
+            </p>
+
+            <div class="stack-products-list">
+              <div class="stack-prod-item">
+                <span class="text-cyan">01.</span>
+                <div style="flex: 1;">
+                  <strong style="color: #ffffff; font-size: 0.95rem;">BCAA Storm (400g)</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Electrolytes & intra-session hydration</div>
+                </div>
+                <span style="font-size: 0.88rem; color: var(--neon-green); font-weight: 700;">₹1,299</span>
+              </div>
+              <div class="stack-prod-item">
+                <span class="text-cyan">02.</span>
+                <div style="flex: 1;">
+                  <strong style="color: #ffffff; font-size: 0.95rem;">Omega Force (90 Softgels)</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">1500mg EPA/DHA joint anti-inflammatory</div>
+                </div>
+                <span style="font-size: 0.88rem; color: var(--neon-green); font-weight: 700;">₹599</span>
+              </div>
+              <div class="stack-prod-item">
+                <span class="text-cyan">03.</span>
+                <div style="flex: 1;">
+                  <strong style="color: #ffffff; font-size: 0.95rem;">Night Recovery Complex (60 Caps)</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">KSM-66® Ashwagandha + ZMA deep sleep</div>
+                </div>
+                <span style="font-size: 0.88rem; color: var(--neon-green); font-weight: 700;">₹1,799</span>
+              </div>
+            </div>
+
+            <div style="margin-top: auto; padding-top: 18px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 0.8rem; color: var(--text-muted); text-decoration: line-through;">₹3,697</span>
+                <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #ffffff;">₹2,772</div>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="addToCart('bcaa-storm', 1); addToCart('omega-force', 1); addToCart('night-recovery-complex', 1);">
+                Add Stack to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workout Progress Tracker (UI Only with LocalStorage) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag neon">Powerlifting & Strength Diagnostic</span>
+          <h2 class="section-title">WORKOUT PROGRESS <span class="text-cyan">TRACKER</span></h2>
+          <p class="section-subtitle">Record your big-three personal records (Bench Press, Squat, Deadlift) and calculate your strength-to-weight ratio.</p>
+        </div>
+
+        <div class="calculator-grid">
+          <!-- Input Form -->
+          <div class="calc-form-card">
+            <h3 style="font-size: 1.3rem; margin-bottom: 18px;">Log Your 1-Rep Max (1RM)</h3>
+            <form id="liftTrackerForm" onsubmit="handleSaveLifts(event)">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="liftBench">Barbell Bench Press (kg) *</label>
+                  <input type="number" id="liftBench" class="form-control" placeholder="120" required value="120" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="liftSquat">Barbell Back Squat (kg) *</label>
+                  <input type="number" id="liftSquat" class="form-control" placeholder="170" required value="170" />
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="liftDeadlift">Barbell Deadlift (kg) *</label>
+                  <input type="number" id="liftDeadlift" class="form-control" placeholder="210" required value="210" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="liftBodyweight">Lifter Bodyweight (kg) *</label>
+                  <input type="number" id="liftBodyweight" class="form-control" placeholder="80" required value="80" />
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-neon btn-block" style="margin-top: 10px;">
+                Save Lifts to Local Profile
+              </button>
+            </form>
+          </div>
+
+          <!-- Lifts Display Card -->
+          <div class="calc-results-card">
+            <span class="section-tag" style="align-self: flex-start;">Powerlifting Metrics</span>
+            <h3 style="font-size: 1.8rem; margin: 12px 0 20px 0; color: #ffffff;">YOUR STRENGTH PROFILE</h3>
+
+            <div class="metric-result-item">
+              <div>
+                <strong style="color: #ffffff; display: block;">3-Lift Total (S + B + D)</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Combined raw powerlifting total</span>
+              </div>
+              <span class="metric-result-val text-neon" id="displayTotalLifts">500 kg</span>
+            </div>
+
+            <div class="metric-result-item">
+              <div>
+                <strong style="color: #ffffff; display: block;">Strength-to-Weight Ratio</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Total lifted divided by bodyweight</span>
+              </div>
+              <span class="metric-result-val text-cyan" id="displayRatio">6.25x BW</span>
+            </div>
+
+            <div class="metric-result-item" style="border-color: var(--primary-blue);">
+              <div>
+                <strong style="color: #ffffff; display: block;">Athlete Tier Classification</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Based on IPF competitive benchmarks</span>
+              </div>
+              <span class="metric-result-val text-white" id="displayClassification">Advanced Athlete</span>
+            </div>
+
+            <div style="margin-top: auto; padding-top: 14px; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Last Updated: Today</span>
+              <button class="btn btn-secondary btn-sm" onclick="showToast('Progress synced locally!', 'success')">Export Card</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Elite Athletes / Trusted By Champions -->
+    <section class="section" style="background: rgba(10, 12, 18, 0.4); border-top: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag neon">Elite Roster</span>
+          <h2 class="section-title">TRUSTED BY <span class="text-cyan">CHAMPIONS</span></h2>
+          <p class="section-subtitle">Meet the world-class strength athletes fueled exclusively by Vortex Labs bio-formulations.</p>
+        </div>
+
+        <div class="athletes-grid">
+          <!-- Athlete 1 -->
+          <div class="athlete-card">
+            <div class="athlete-visual">
+              <div class="athlete-avatar-huge">MV</div>
+            </div>
+            <div class="athlete-content">
+              <span style="color: var(--primary-blue); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">IFBB Professional</span>
+              <h3 style="font-size: 1.5rem; color: #ffffff; margin: 4px 0 8px 0;">Marcus "Titan" Vance</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+                "When dropping to 4% stage body fat, every gram of protein must be pristine. ISO Matrix Isolate is my daily anchor."
+              </p>
+              <div style="background: var(--bg-surface); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); font-size: 0.82rem;">
+                <span style="color: var(--text-muted);">Favorite Compound:</span>
+                <strong style="color: #ffffff; margin-left: 6px;">ISO Matrix Isolate (Wild Strawberry)</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Athlete 2 -->
+          <div class="athlete-card">
+            <div class="athlete-visual" style="background: linear-gradient(135deg, #241838, #0e0917);">
+              <div class="athlete-avatar-huge" style="background: linear-gradient(135deg, #9d4edd, #00d4ff);">ER</div>
+            </div>
+            <div class="athlete-content">
+              <span style="color: var(--neon-green); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Olympic Weightlifting / PhD</span>
+              <h3 style="font-size: 1.5rem; color: #ffffff; margin: 4px 0 8px 0;">Dr. Elena Rostova</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+                "The scientific dosing of Creapure® micronized creatine gives my nervous system the peak ATP required for explosive snatches."
+              </p>
+              <div style="background: var(--bg-surface); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); font-size: 0.82rem;">
+                <span style="color: var(--text-muted);">Favorite Compound:</span>
+                <strong style="color: #ffffff; margin-left: 6px;">Creatine X-Force Pure Micronized</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Athlete 3 -->
+          <div class="athlete-card">
+            <div class="athlete-visual" style="background: linear-gradient(135deg, #301f12, #120b06);">
+              <div class="athlete-avatar-huge" style="background: linear-gradient(135deg, #ff7700, #39ff14);">RC</div>
+            </div>
+            <div class="athlete-content">
+              <span style="color: var(--accent-orange); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">CrossFit Games Finalist</span>
+              <h3 style="font-size: 1.5rem; color: #ffffff; margin: 4px 0 8px 0;">Ryan "Lightning" Cole</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+                "6g pure L-Citrulline Malate keeps my muscles pumped and oxygenated through grueling 40-minute brutal AMRAP conditioning workouts."
+              </p>
+              <div style="background: var(--bg-surface); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); font-size: 0.82rem;">
+                <span style="color: var(--text-muted);">Favorite Compound:</span>
+                <strong style="color: #ffffff; margin-left: 6px;">Vortex Pre-Workout + BCAA Storm</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <span>© 2026 Stitch Gym Supplements / Vortex Labs Inc. All rights reserved.</span>
+        <span>Biometric calculations are for athletic optimization purposes. Consult sports medicine professionals before starting intense protocols.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- Biometric Interactive Logic -->
+  <script>
+    async function handleBiometricCalculate(e) {
+      e.preventDefault();
+      const weight = parseFloat(document.getElementById('bioWeight').value);
+      const height = parseFloat(document.getElementById('bioHeight').value);
+      const age = parseInt(document.getElementById('bioAge').value, 10);
+      const gender = document.getElementById('bioGender').value;
+      const activityLevel = document.getElementById('bioActivity').value;
+      const goal = document.getElementById('bioGoal').value;
+
+      // Call API or Fallback
+      const res = await calculateBiometricsApi({
+        weight, height, age, gender, activityLevel, goal
+      });
+
+      document.getElementById('resBmr').textContent = `${res.bmr.toLocaleString()} kcal`;
+      document.getElementById('resTdee').textContent = `${res.targetCalories.toLocaleString()} kcal`;
+      document.getElementById('resProtein').textContent = `${res.dailyProtein} g/day`;
+      document.getElementById('resWater').textContent = `${res.waterLiters} L/day`;
+
+      showToast('Biometric recalculation completed!', 'success');
+    }
+
+    // Workout PR Tracker in LocalStorage
+    const PR_STORAGE_KEY = 'vortex_athlete_prs_v1';
+
+    function loadSavedLifts() {
+      const saved = localStorage.getItem(PR_STORAGE_KEY);
+      if (saved) {
+        try {
+          const data = JSON.parse(saved);
+          document.getElementById('liftBench').value = data.bench || 120;
+          document.getElementById('liftSquat').value = data.squat || 170;
+          document.getElementById('liftDeadlift').value = data.deadlift || 210;
+          document.getElementById('liftBodyweight').value = data.bw || 80;
+          updateLiftsDisplay(data.bench, data.squat, data.deadlift, data.bw);
+        } catch(e) {}
+      }
+    }
+
+    function updateLiftsDisplay(b, s, d, bw) {
+      const total = (b || 0) + (s || 0) + (d || 0);
+      const ratio = bw > 0 ? (total / bw).toFixed(2) : 0;
+
+      document.getElementById('displayTotalLifts').textContent = `${total} kg`;
+      document.getElementById('displayRatio').textContent = `${ratio}x BW`;
+
+      let tier = 'Intermediate Athlete';
+      if (ratio >= 6.5) tier = 'Elite Master Lifter';
+      else if (ratio >= 5.0) tier = 'Advanced Competitor';
+      else if (ratio >= 3.5) tier = 'Trained Lifter';
+      else tier = 'Novice Athlete';
+
+      document.getElementById('displayClassification').textContent = tier;
+    }
+
+    function handleSaveLifts(e) {
+      e.preventDefault();
+      const bench = parseFloat(document.getElementById('liftBench').value) || 0;
+      const squat = parseFloat(document.getElementById('liftSquat').value) || 0;
+      const deadlift = parseFloat(document.getElementById('liftDeadlift').value) || 0;
+      const bw = parseFloat(document.getElementById('liftBodyweight').value) || 80;
+
+      const data = { bench, squat, deadlift, bw, date: new Date().toISOString() };
+      localStorage.setItem(PR_STORAGE_KEY, JSON.stringify(data));
+      updateLiftsDisplay(bench, squat, deadlift, bw);
+      showToast('Lifts saved to your biometric profile!', 'success');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadSavedLifts();
+    });
+  </script>
+</body>
+</html>

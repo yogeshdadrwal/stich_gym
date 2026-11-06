@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Range 3D | Stitch Gym Supplements - Vortex Labs</title>
+  
+  <!-- Google Fonts: Rajdhani & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Animated Star & Particle Field Canvas (CSS Only) */
+    .space-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .star-dot {
+      position: absolute;
+      background: #00d4ff;
+      border-radius: 50%;
+      box-shadow: 0 0 6px #00d4ff;
+      animation: drift linear infinite;
+    }
+
+    @keyframes drift {
+      from { transform: translateY(100vh); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.8; }
+      to { transform: translateY(-50px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Navbar -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="site-logo">
+        <div class="logo-icon-wrap">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 8.5 2 15.5 12 22 22 15.5 22 8.5 12 2"></polygon>
+            <line x1="12" y1="22" x2="12" y2="15.5"></line>
+            <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-brand-stitch">STITCH <span>LABS</span></span>
+          <span class="logo-subtext">VORTEX PERFORMANCE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="interactive_catalog.html" class="nav-link active">Interactive Range</a>
+        <a href="biometric.html" class="nav-link">Biometric Performance</a>
+        <a href="cart.html" class="nav-link">Cart & Fast Pay</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-icon-btn" aria-label="View Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">2</span>
+        </a>
+        <button class="mobile-toggle-btn" aria-label="Toggle navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="products.html" class="nav-link">Products Catalog</a>
+    <a href="interactive_catalog.html" class="nav-link active">Interactive Range 3D</a>
+    <a href="biometric.html" class="nav-link">Biometric Calculator & Tracker</a>
+    <a href="cart.html" class="nav-link">Cart & Checkout</a>
+  </div>
+
+  <main class="section" style="position: relative;">
+    
+    <!-- CSS-Only Particle Field Background -->
+    <div class="space-particles" aria-hidden="true">
+      <div class="star-dot" style="left: 12%; width: 3px; height: 3px; animation-duration: 9s; animation-delay: 0s;"></div>
+      <div class="star-dot" style="left: 28%; width: 4px; height: 4px; background: #39ff14; box-shadow: 0 0 8px #39ff14; animation-duration: 13s; animation-delay: 2s;"></div>
+      <div class="star-dot" style="left: 45%; width: 2px; height: 2px; animation-duration: 11s; animation-delay: 4s;"></div>
+      <div class="star-dot" style="left: 65%; width: 3px; height: 3px; animation-duration: 8s; animation-delay: 1s;"></div>
+      <div class="star-dot" style="left: 82%; width: 4px; height: 4px; background: #39ff14; box-shadow: 0 0 8px #39ff14; animation-duration: 14s; animation-delay: 3s;"></div>
+      <div class="star-dot" style="left: 92%; width: 2px; height: 2px; animation-duration: 10s; animation-delay: 5s;"></div>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 1;">
+      
+      <!-- Bold Hero Header -->
+      <div class="section-title-wrap">
+        <span class="section-tag neon">3D Interactive Spectrum</span>
+        <h1 style="font-size: clamp(2.5rem, 5vw, 4.2rem); margin-top: 8px;">
+          EXPLORE THE <span class="text-gradient">VORTEX RANGE</span>
+        </h1>
+        <p class="section-subtitle">
+          Hover over category cards below for 3D perspective tilt. Click any category to isolate formulations, or click "Quick View" to inspect batch chemistry.
+        </p>
+      </div>
+
+      <!-- Spotlight: Protein of the Month Banner -->
+      <div class="spotlight-banner">
+        <div>
+          <span class="product-badge neon" style="position: static; display: inline-block; margin-bottom: 14px;">
+            ★ Protein of the Month Spotlight
+          </span>
+          <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.6rem); color: #ffffff; margin-bottom: 12px;">
+            ISO MATRIX ISOLATE — <span class="text-neon">ALPHONSO MANGO</span>
+          </h2>
+          <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+            Limited summer harvest infusion. Made with freeze-dried Alphonso mango extract and cold CFM whey isolate. Delivers 27g protein with zero bitter aftertaste and zero added sugar. Only 500 tubs crafted per batch.
+          </p>
+
+          <div style="display: flex; gap: 24px; margin-bottom: 28px; flex-wrap: wrap;">
+            <div>
+              <div style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; color: #ffffff;">27.0g</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Pure CFM Isolate</div>
+            </div>
+            <div>
+              <div style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; color: var(--neon-green);">0.0g</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Added Sugar</div>
+            </div>
+            <div>
+              <div style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; color: var(--primary-blue);">5.8g</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Naturally Occurring BCAAs</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="addToCart('iso-matrix-isolate', 1, 'Alphonso Mango', '2kg')">
+              Claim Yours Now • ₹2,999
+            </button>
+            <a href="product_detail.html" class="btn btn-secondary">Full Lab Report</a>
+          </div>
+        </div>
+
+        <!-- Spotlight Graphic Visual -->
+        <div style="text-align: center; position: relative;">
+          <svg viewBox="0 0 160 210" width="180" height="230" xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto; filter: drop-shadow(0 15px 35px rgba(57,255,20,0.3));">
+            <rect x="42" y="16" width="76" height="18" rx="4" fill="#1b202c" stroke="#39ff14" stroke-width="1.5"/>
+            <line x1="45" y1="22" x2="115" y2="22" stroke="#39ff14" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <path d="M46 34 L114 34 L120 46 L40 46 Z" fill="#11151f" stroke="#222b3e"/>
+            <rect x="25" y="46" width="110" height="145" rx="14" fill="#131722" stroke="#39ff14" stroke-width="1.5"/>
+            <rect x="30" y="66" width="100" height="104" rx="8" fill="#090c12" stroke="#222c3f"/>
+            <polygon points="80,74 92,81 92,95 80,102 68,95 68,81" fill="none" stroke="#39ff14" stroke-width="1.5"/>
+            <circle cx="80" cy="88" r="3.5" fill="#39ff14"/>
+            <text x="80" y="114" fill="#ffffff" font-family="'Rajdhani', sans-serif" font-weight="800" font-size="11" text-anchor="middle">ALPHONSO MANGO</text>
+            <text x="80" y="125" fill="#39ff14" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="8" text-anchor="middle">LIMITED EDITION ISOLATE</text>
+            <rect x="42" y="134" width="76" height="16" rx="3" fill="#0d111a" stroke="#39ff14" stroke-width="0.8"/>
+            <text x="80" y="145" fill="#39ff14" font-family="'Inter', sans-serif" font-weight="700" font-size="7.5" text-anchor="middle">27G PROTEIN | 0 SUGAR</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 3D Category Interactive Selector Grid -->
+      <div style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <h3 style="font-size: 1.4rem;">Select Formulation Category</h3>
+        <span style="font-size: 0.85rem; color: var(--text-muted);">Hover to trigger 3D perspective depth</span>
+      </div>
+
+      <div class="categories-3d-grid" id="category3DContainer">
+        <!-- Category 1: All -->
+        <div class="category-card-3d active" data-cat="all" onclick="filterBy3DCategory('all', this)">
+          <div class="cat-3d-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+          <div class="cat-3d-name">All Products</div>
+          <div class="cat-3d-count">8 Formulations</div>
+        </div>
+
+        <!-- Category 2: Proteins -->
+        <div class="category-card-3d" data-cat="protein" onclick="filterBy3DCategory('protein', this)">
+          <div class="cat-3d-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <div class="cat-3d-name">Proteins</div>
+          <div class="cat-3d-count">Isolate & Gainers</div>
+        </div>
+
+        <!-- Category 3: Pre-Workouts -->
+        <div class="category-card-3d" data-cat="pre-workout" onclick="filterBy3DCategory('pre-workout', this)">
+          <div class="cat-3d-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <div class="cat-3d-name">Pre-Workouts</div>
+          <div class="cat-3d-count">High Stimulant</div>
+        </div>
+
+        <!-- Category 4: Creatine -->
+        <div class="category-card-3d" data-cat="creatine" onclick="filterBy3DCategory('creatine', this)">
+          <div class="cat-3d-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+            </svg>
+          </div>
+          <div class="cat-3d-name">Creatine</div>
+          <div class="cat-3d-count">Creapure® 200 Mesh</div>
+        </div>
+
+        <!-- Category 5: BCAAs -->
+        <div class="category-card-3d" data-cat="bcaa" onclick="filterBy3DCategory('bcaa', this)">
+          <div class="cat-3d-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+          </div>
+          <div class="cat-3d-name">BCAAs</div>
+          <div class="cat-3d-count">Electrolyte Hydration</div>
+        </div>
+
+        <!-- Category 6: Recovery -->
+        <div class="category-card-3d" data-cat="recovery" onclick="filterBy3DCategory('recovery', this)">
+          <div class="cat-3d-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </div>
+          <div class="cat-3d-name">Recovery</div>
+          <div class="cat-3d-count">Glutamine & Sleep</div>
+        </div>
+
+        <!-- Category 7: Vitamins -->
+        <div class="category-card-3d" data-cat="vitamins" onclick="filterBy3DCategory('vitamins', this)">
+          <div class="cat-3d-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <div class="cat-3d-name">Vitamins</div>
+          <div class="cat-3d-count">Omega Fish Oils</div>
+        </div>
+      </div>
+
+      <!-- Interactive Filtered Products Grid -->
+      <div class="products-grid" id="interactiveProductsGrid">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-info">
+          <div class="site-logo">
+            <div class="logo-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 8.5 2 15.5 12 22 22 15.5 22 8.5 12 2"></polygon>
+                <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-brand-stitch">STITCH <span>LABS</span></span>
+              <span class="logo-subtext">VORTEX PERFORMANCE</span>
+            </div>
+          </div>
+          <p>Next-generation performance nutrition engineered for athletes who accept no compromises.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Storefront Home</a></li>
+            <li><a href="products.html">All 8 Formulations</a></li>
+            <li><a href="interactive_catalog.html">Interactive 3D Catalog</a></li>
+            <li><a href="biometric.html">Biometric Performance</a></li>
+            <li><a href="cart.html">Cart & Checkout</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Quality Assurance</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">HPLC Analytical Testing</a></li>
+            <li><a href="#">Heavy Metal Free Certification</a></li>
+            <li><a href="#">Banned Substance Screening</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Stay Connected</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 12px;">Subscribe for exclusive limited drops and secret promo keys.</p>
+          <form class="footer-newsletter-box" onsubmit="event.preventDefault(); showToast('Subscribed!', 'success'); this.reset();">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Stitch Gym Supplements / Vortex Labs Inc. All rights reserved.</span>
+        <span>All formulations lab tested for purity and athlete safety.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- Interactive 3D Range Filtering & Quick View Logic -->
+  <script>
+    let activeCategoryFilter = 'all';
+
+    function renderInteractiveGrid() {
+      const container = document.getElementById('interactiveProductsGrid');
+      const filtered = activeCategoryFilter === 'all'
+        ? PRODUCTS_DATA
+        : PRODUCTS_DATA.filter(p => p.category === activeCategoryFilter);
+
+      container.innerHTML = filtered.map(p => `
+        <div class="product-card">
+          <span class="product-badge ${p.badgeType}">${p.badge}</span>
+          <div class="product-media">
+            ${getProductSVG(p.iconType, p.colorAccent)}
+          </div>
+          <div class="product-body">
+            <div class="product-category-row">
+              <span>${p.categoryLabel}</span>
+              <span class="product-weight">${p.weight}</span>
+            </div>
+            <h3 class="product-title">
+              <a href="${p.id === 'iso-matrix-isolate' ? 'product_detail.html' : 'javascript:void(0)'}" 
+                 onclick="${p.id === 'iso-matrix-isolate' ? '' : `openQuickView('${p.id}')`}">
+                ${p.name}
+              </a>
+            </h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">${p.rating} (${p.reviewCount} reviews)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="product-price">₹${p.price.toLocaleString('en-IN')}</span>
+                <span class="original-price">₹${p.originalPrice.toLocaleString('en-IN')}</span>
+              </div>
+              <div class="product-actions-btn-group">
+                <button class="btn btn-primary btn-sm" onclick="addToCart('${p.id}', 1)">Add to Cart</button>
+                <button class="btn btn-secondary btn-sm" onclick="openQuickView('${p.id}')">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterBy3DCategory(cat, element) {
+      document.querySelectorAll('.category-card-3d').forEach(el => el.classList.remove('active'));
+      element.classList.add('active');
+      activeCategoryFilter = cat;
+      renderInteractiveGrid();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderInteractiveGrid();
+    });
+  </script>
+</body>
+</html>

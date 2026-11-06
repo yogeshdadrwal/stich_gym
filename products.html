@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Formulations | Stitch Gym Supplements - Vortex Labs</title>
+  
+  <!-- Google Fonts: Rajdhani & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Navbar -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="site-logo">
+        <div class="logo-icon-wrap">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 8.5 2 15.5 12 22 22 15.5 22 8.5 12 2"></polygon>
+            <line x1="12" y1="22" x2="12" y2="15.5"></line>
+            <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-brand-stitch">STITCH <span>LABS</span></span>
+          <span class="logo-subtext">VORTEX PERFORMANCE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="interactive_catalog.html" class="nav-link">Interactive Range</a>
+        <a href="biometric.html" class="nav-link">Biometric Performance</a>
+        <a href="cart.html" class="nav-link">Cart & Fast Pay</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-icon-btn" aria-label="View Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">2</span>
+        </a>
+        <button class="mobile-toggle-btn" aria-label="Toggle navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="products.html" class="nav-link active">Products Catalog</a>
+    <a href="interactive_catalog.html" class="nav-link">Interactive Range 3D</a>
+    <a href="biometric.html" class="nav-link">Biometric Calculator & Tracker</a>
+    <a href="cart.html" class="nav-link">Cart & Checkout</a>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      
+      <!-- Catalog Page Header -->
+      <div style="margin-bottom: 36px;">
+        <span class="section-tag neon">Clinical Pharmacopeia</span>
+        <h1 style="font-size: clamp(2rem, 4vw, 3.2rem); margin-top: 8px;">ALL FORMULATIONS</h1>
+        <p style="color: var(--text-secondary); max-width: 680px;">Explore the complete Vortex Labs roster. Dosed with therapeutic precision, double-tested for heavy metals and purity, and formulated for elite biological adaptation.</p>
+      </div>
+
+      <!-- Main Layout: Filter Sidebar + Products Grid -->
+      <div class="catalog-layout">
+        
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+          <div class="sidebar-header">
+            <h3 class="sidebar-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+              </svg>
+              Filters
+            </h3>
+            <button type="button" class="btn-reset-filters" id="resetFiltersBtn">Reset All</button>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="filter-group">
+            <h4 class="filter-heading">Category</h4>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-label">
+                <input type="radio" name="categoryFilter" value="all" class="visually-hidden" checked />
+                <span class="custom-checkbox"></span>
+                <span>All Categories (8)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="radio" name="categoryFilter" value="protein" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Protein & Gainers (2)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="radio" name="categoryFilter" value="pre-workout" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Pre-Workout (1)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="radio" name="categoryFilter" value="creatine" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Creatine (1)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="radio" name="categoryFilter" value="bcaa" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>BCAA & Electrolytes (1)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="radio" name="categoryFilter" value="recovery" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Recovery & Sleep (2)</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="radio" name="categoryFilter" value="vitamins" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Vitamins & Health (1)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Price Range Slider -->
+          <div class="filter-group">
+            <div class="filter-heading">
+              <span>Max Price</span>
+              <span class="current-price-val" id="priceDisplay">₹3,500</span>
+            </div>
+            <div class="range-slider-wrap">
+              <input type="range" id="priceRange" class="price-range-input" min="500" max="3500" step="100" value="3500" />
+              <div class="price-range-values">
+                <span>₹500</span>
+                <span>₹3,500</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flavour Filter -->
+          <div class="filter-group">
+            <h4 class="filter-heading">Flavour Profile</h4>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="flavorFilter" value="Chocolate" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Chocolate / Fudge</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="flavorFilter" value="Vanilla" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Vanilla Soft-Serve</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="flavorFilter" value="Berry" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Berry / Blue Razz</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="flavorFilter" value="Fruit" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Citrus / Orange / Mango</span>
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="flavorFilter" value="Unflavored" class="visually-hidden" />
+                <span class="custom-checkbox"></span>
+                <span>Unflavored / Pure</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Catalog Main Area -->
+        <div class="catalog-content">
+          <!-- Toolbar -->
+          <div class="catalog-toolbar">
+            <div class="results-count">
+              Showing <strong id="visibleCount">8</strong> of <strong>8</strong> Formulations
+            </div>
+            <div class="toolbar-controls">
+              <label for="sortDropdown" style="font-size: 0.85rem; color: var(--text-secondary);">Sort By:</label>
+              <select id="sortDropdown" class="sort-select">
+                <option value="popular">Most Popular</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Top Rated (★★★★★)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid Container -->
+          <div class="products-grid" id="catalogGrid">
+            <!-- Populated via script.js -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 Stitch Gym Supplements / Vortex Labs Inc. All rights reserved.</span>
+        <span>Science Meets Beast Mode</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+  
+  <!-- Catalog Filtering & Rendering Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('catalogGrid');
+      const priceSlider = document.getElementById('priceRange');
+      const priceDisplay = document.getElementById('priceDisplay');
+      const sortSelect = document.getElementById('sortDropdown');
+      const visibleCountElem = document.getElementById('visibleCount');
+      const resetBtn = document.getElementById('resetFiltersBtn');
+
+      function renderCatalog() {
+        const selectedCategory = document.querySelector('input[name="categoryFilter"]:checked')?.value || 'all';
+        const maxPrice = parseInt(priceSlider.value, 10);
+        
+        const selectedFlavors = Array.from(document.querySelectorAll('input[name="flavorFilter"]:checked'))
+          .map(cb => cb.value.toLowerCase());
+
+        let filtered = PRODUCTS_DATA.filter(p => {
+          if (selectedCategory !== 'all' && p.category !== selectedCategory) return false;
+          if (p.price > maxPrice) return false;
+
+          if (selectedFlavors.length > 0) {
+            const hasFlavorMatch = p.flavors.some(f => {
+              const lowerF = f.toLowerCase();
+              return selectedFlavors.some(filterF => {
+                if (filterF === 'chocolate' && lowerF.includes('chocolate')) return true;
+                if (filterF === 'vanilla' && lowerF.includes('vanilla')) return true;
+                if (filterF === 'berry' && (lowerF.includes('berry') || lowerF.includes('razz'))) return true;
+                if (filterF === 'fruit' && (lowerF.includes('orange') || lowerF.includes('mango') || lowerF.includes('lime') || lowerF.includes('lemon') || lowerF.includes('watermelon') || lowerF.includes('apple'))) return true;
+                if (filterF === 'unflavored' && lowerF.includes('unflavored')) return true;
+                return false;
+              });
+            });
+            if (!hasFlavorMatch) return false;
+          }
+
+          return true;
+        });
+
+        const sortBy = sortSelect.value;
+        if (sortBy === 'price-low') {
+          filtered.sort((a, b) => a.price - b.price);
+        } else if (sortBy === 'price-high') {
+          filtered.sort((a, b) => b.price - a.price);
+        } else if (sortBy === 'rating') {
+          filtered.sort((a, b) => b.rating - a.rating);
+        } else {
+          filtered.sort((a, b) => b.reviewCount - a.reviewCount);
+        }
+
+        visibleCountElem.textContent = filtered.length;
+
+        if (filtered.length === 0) {
+          grid.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
+              <h3 style="font-size: 1.4rem; color: #ffffff; margin-bottom: 8px;">No Formulations Match Criteria</h3>
+              <p style="color: var(--text-secondary); margin-bottom: 20px;">Try adjusting your price slider or relaxing the flavor filters.</p>
+              <button class="btn btn-outline-cyan btn-sm" onclick="resetAllFilters()">Clear Filters</button>
+            </div>
+          `;
+          return;
+        }
+
+        grid.innerHTML = filtered.map(p => `
+          <div class="product-card">
+            <span class="product-badge ${p.badgeType}">${p.badge}</span>
+            <div class="product-media">
+              ${getProductSVG(p.iconType, p.colorAccent)}
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span>${p.categoryLabel}</span>
+                <span class="product-weight">${p.weight}</span>
+              </div>
+              <h3 class="product-title">
+                <a href="${p.id === 'iso-matrix-isolate' ? 'product_detail.html' : 'javascript:void(0)'}" 
+                   onclick="${p.id === 'iso-matrix-isolate' ? '' : `openQuickView('${p.id}')`}">
+                  ${p.name}
+                </a>
+              </h3>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">${p.rating} (${p.reviewCount})</span>
+              </div>
+              <div class="product-footer">
+                <div class="price-wrap">
+                  <span class="product-price">₹${p.price.toLocaleString('en-IN')}</span>
+                  <span class="original-price">₹${p.originalPrice.toLocaleString('en-IN')}</span>
+                </div>
+                <div class="product-actions-btn-group">
+                  <button class="btn btn-primary btn-sm" onclick="addToCart('${p.id}', 1)">Add to Cart</button>
+                  <button class="btn btn-secondary btn-sm" onclick="${p.id === 'iso-matrix-isolate' ? "location.href='product_detail.html'" : `openQuickView('${p.id}')`}">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      window.resetAllFilters = function() {
+        document.querySelector('input[name="categoryFilter"][value="all"]').checked = true;
+        document.querySelectorAll('input[name="flavorFilter"]').forEach(cb => cb.checked = false);
+        priceSlider.value = 3500;
+        priceDisplay.textContent = '₹3,500';
+        sortSelect.value = 'popular';
+        renderCatalog();
+      };
+
+      document.querySelectorAll('input[name="categoryFilter"]').forEach(el => {
+        el.addEventListener('change', renderCatalog);
+      });
+
+      document.querySelectorAll('input[name="flavorFilter"]').forEach(el => {
+        el.addEventListener('change', renderCatalog);
+      });
+
+      priceSlider.addEventListener('input', e => {
+        priceDisplay.textContent = `₹${parseInt(e.target.value, 10).toLocaleString('en-IN')}`;
+        renderCatalog();
+      });
+
+      sortSelect.addEventListener('change', renderCatalog);
+      resetBtn.addEventListener('click', resetAllFilters);
+
+      renderCatalog();
+    });
+  </script>
+</body>
+</html>
